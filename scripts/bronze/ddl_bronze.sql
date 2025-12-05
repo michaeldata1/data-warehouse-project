@@ -3,7 +3,7 @@
 DDL Script: Create Bronze Tables
 ==================================
 script
-
+*/
 DROP TABLE IF EXISTS crm_cust_info;
 create table bronze.crm_cust_info(
 cst_id int,
