@@ -33,9 +33,9 @@ begin
         print ' Load duration: ' + cast(datediff(second, @start_time, @end_time)as nvarchar) + 'seconds';
         print '-------------------------';
         set @start_time = getdate();
-        print 'truncating crm_cust_info';
+        print 'truncating crm_prd_info';
         truncate table bronze.crm_prd_info;
-        print 'inserting crm_cust_info';
+        print 'inserting crm_prd_info';
         bulk insert bronze.crm_prd_info
         from 'C:\Users\Michael\OneDrive\Documents\data engineer\prd_info.csv'
         with ( firstrow = 2,
@@ -46,19 +46,7 @@ begin
         set @end_time = getdate();
         print ' Load duration: ' + cast(datediff(second, @start_time, @end_time)as nvarchar) + 'seconds';
         print '------------------------';
-        set @start_time = getdate();
-        print 'truncating crm_prd_info';
-        truncate table bronze.crm_prd_info;
-        print 'inserting crm_prd_info';
-        bulk insert bronze.crm_prd_info
-        from 'C:\Users\Michael\OneDrive\Documents\data engineer\prd_info.csv'
-        with ( firstrow = 2,
-               fieldterminator = ',',
-               tablock
-        );
-        set @end_time = getdate();
-        print ' Load duration: ' + cast(datediff(second, @start_time, @end_time)as nvarchar) + 'seconds';
-        print '-----------------------';
+        
         set @start_time = getdate();
         print 'truncating crm_sales_details';
         truncate table bronze.crm_sales_details;
@@ -71,9 +59,7 @@ begin
         );
         set @end_time = getdate();
         print ' Load duration: ' + cast(datediff(second, @start_time, @end_time)as nvarchar) + 'seconds';
-        print '======================';
-        print 'Loading Bronze Layer';
-        print '======================';
+
         print '----------------------';
         print 'Loading ERP Tables'
         print '----------------------';
@@ -93,9 +79,9 @@ begin
         print '----------------------';
 
         set @start_time = getdate();
-        print 'truncating erp_cust_az12';
+        print 'truncating erp_loc_a101';
         truncate table bronze.erp_loc_a101;
-        print 'inserting erp_cust_az12';
+        print 'inserting erp_loc_a101';
         bulk insert bronze.erp_loc_a101
         from 'C:\Users\Michael\OneDrive\Documents\data engineer\LOC_A101.csv'
         with ( firstrow = 2,
