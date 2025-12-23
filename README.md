@@ -48,9 +48,12 @@ This project uses:
 
 ## 📁 Repository Structure
 
-├── datasets # raw source files
-├── docs # diagrams & documentation
-├── scripts # ETL scripts
-├── tests # unit or integration tests
-├── README.md # project overview
-└── LICENSE # MIT License
+```
+├── datasets         # raw source files
+├── docs             # diagrams & documentation
+├── scripts          # ETL scripts
+├── tests            # unit or integration tests
+├── README.md        # project overview
+└── LICENSE          # MIT License
+```
+
