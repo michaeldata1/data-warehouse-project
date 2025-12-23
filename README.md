@@ -23,11 +23,11 @@ Below diagrams visualize the core pipeline and schema:
 ### 📊 Data Architecture Diagram  
 
 
-![Data Architecture](C:\Users\Michael\OneDrive\Documents\data engineer\data_architecture.png)
+![Data Architecture](docs/data_architecture.png)
 
 ### 🔄 ETL Pipeline Flow  
 
-![ETL Flow](C:\Users\Michael\OneDrive\Documents\data engineer\data_flow_diagram.png)
+![ETL Flow](docs/data_flow_diagram.png)
 
 
 
