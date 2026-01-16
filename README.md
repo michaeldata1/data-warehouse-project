@@ -1,6 +1,6 @@
 # 🧱 Modern Data Warehouse Project
 
-**Building a modern data warehouse with SQL Server, including ETL processes, data modelling, and analytics.**  
+**Building a modern data warehouse with SQL Server, including ELT processes, data modelling, and analytics.**  
 This repository demonstrates an end-to-end data warehousing solution using SQL Server — from raw source data to a cleaned, analytics-ready model.
 
 ---
