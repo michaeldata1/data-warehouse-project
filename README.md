@@ -10,7 +10,7 @@ This repository demonstrates an end-to-end data warehousing solution using SQL S
 This project showcases:
 
 - A **scalable data warehouse** built using SQL Server
-- Robust **ETL processes** to extract, transform, and load data
+- Robust **ELT processes** to extract, transform, and load data
 - A **star schema data model** optimized for analytics
 - SQL-based reporting and insights
 
@@ -25,7 +25,7 @@ Below diagrams visualize the core pipeline and schema:
 
 ![Data Architecture](docs/data_architecture.png)
 
-### 🔄 ETL Pipeline Flow  
+### 🔄 ELT Pipeline Flow  
 
 ![ETL Flow](docs/data_flow_diagram.png)
 
@@ -39,7 +39,7 @@ This project uses:
 
 - **SQL Server** (Database engine)  
 - **T-SQL** (for transformations & schema creation)  
-- **ETL Scripts** (SQL scripts or Python if applicable)  
+- **ELT Scripts** (SQL scripts or Python if applicable)  
 - **Diagrams created with draw.io / diagrams.net**  
 - **Git & GitHub** for version control
 
